@@ -40,9 +40,9 @@ btnEnviar.addEventListener('click', () => {
     };
     
     socket.emit('enviar-mensaje', payload, (id) => {
-        console.log('Desde el server', id); // Enviar un tercer argumento es generar un callback en el backend,
-                                            // es decir, hasta que se ejecute ese callback, obtendre una respuesta
-                                            // a mi emision
+
+        console.log('Desde el server', id);
+
     });
 
 });
